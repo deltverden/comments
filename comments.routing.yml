@@ -1,0 +1,25 @@
+comments.page:
+  path: '/comments'
+  defaults:
+    _title: 'Comments'
+    _controller: 'Drupal\comments\Controller\Comments::get'
+  requirements:
+    _access: 'TRUE'
+
+comments.edit:
+  path: '/admin/comments/edit/{id}'
+  defaults:
+    _title: 'Edit comments'
+    _controller: 'Drupal\comments\Controller\Comments::edit'
+  requirements:
+    _role: 'administrator'
+    id: \d+
+
+comments.delete:
+  path: '/admin/comments/delete/{id}'
+  defaults:
+    _title: 'Delete comments'
+    _controller: 'Drupal\comments\Controller\Comments::delete'
+  requirements:
+    _role: 'administrator'
+    id: \d+

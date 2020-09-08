@@ -1,0 +1,5 @@
+name: Comments
+type: module
+description: For comments
+version: 0.1
+core: 8.x

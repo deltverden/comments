@@ -1,0 +1,67 @@
+<?php
+/**
+ * @return mixed
+ * Implements hook_schema().
+ */
+
+function comments_schema() {
+
+  $schema['a_comments'] = [
+    'description' => 'Comments table',
+    'fields' => [
+      'id' => [
+        'description' => 'ID',
+        'type' => 'serial',
+        'length' => 10,
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'date_create' => [
+        'description' => 'Create date',
+        'mysql_type' => 'TIMESTAMP',
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'description' => 'Name',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'email' => [
+        'description' => 'Email',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'phone' => [
+        'description' => 'Phone number',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'text' => [
+        'description' => 'Comment text',
+        'type' => 'text',
+        'not null' => TRUE,
+        'size' => 'big',
+      ],
+      'avatar' => [
+        'description' => 'User avatar',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => 'default.png',
+      ],
+      'image' => [
+        'description' => 'Comment image',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => FALSE,
+        'default' => NULL,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

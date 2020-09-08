@@ -1,0 +1,8 @@
+global-style:
+  css:
+    theme:
+      css/style.css: {}
+      '//fonts.googleapis.com/css2?family=Josefin+Sans': { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/jquery.once

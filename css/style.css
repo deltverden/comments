@@ -1,0 +1,224 @@
+main {
+  font-family: 'Titillium Web', sans-serif;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  line-height: 25px;
+}
+
+.add-edit-comments ul {
+  list-style-type: none;
+}
+
+.add-edit-comments ul li:before {
+  content: '- ';
+}
+
+.add-edit-comments {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px 10px;
+  background: #fdf8ed;
+  color: #734c00;
+}
+
+div[aria-label="Status message"].add-edit-comments {
+  background: #f0fded;
+  color: #287300;
+  border-radius: 10px;
+  text-align: center;
+}
+
+div[aria-label="Error message"].add-edit-comments {
+  background: #fdeded;
+  color: #731700;
+}
+
+#form-system-messages {
+  background: #fdeded;
+  border-radius: 10px;
+  box-shadow: 7px 7px 5px rgba(120, 50, 50, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+#form-system-messages ul li {
+  color: #734c00;
+}
+
+.form-item-name input, .form-item-email input, .form-item-phone input, .form-item-text textarea {
+  border: 2px solid black;
+  outline: none;
+}
+
+.addcomment-form {
+  margin: 40px 0;
+  padding: 20px 0 0 0;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+.addcomment-form .form-item {
+  margin: 10px 0;
+}
+
+.addcomment-form .form-item [aria-required="true"] {
+  padding: 5px 10px;
+}
+
+.addcomment-form .form-item-avatar input::-webkit-file-upload-button, .addcomment-form .form-item-image input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.addcomment-form .form-item-avatar input, .addcomment-form .form-item-image input {
+  background: none;
+  border: 2px solid black;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.addcomment-form .form-item-avatar input:hover, .addcomment-form .form-item-image input:hover {
+  background: black;
+  color: white;
+}
+
+.addcomment-form .addcomments {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addcomment-form .form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addcomment-form textarea {
+  resize: none;
+}
+
+.addcomment-form #edit-submit {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid black;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 5px;
+  transition: 0.3s;
+  outline: none;
+}
+
+.addcomment-form #edit-submit:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+.block-window {
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.block-window:hover {
+  transform: translateX(-20px);
+  box-shadow: 15px 15px 13px rgba(0, 0, 0, 0.3);
+}
+
+.author-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.block-author {
+  display: flex;
+  overflow: hidden;
+}
+
+.block-body {
+  border-top: 1px solid black;
+}
+
+.author-avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.contact-emone {
+  color: rgba(65, 76, 85, 0.91);
+  font-size: 0.8em;
+}
+
+.contact-body p {
+  color: rgba(65, 76, 85, 0.91);
+  font-size: 0.8em;
+}
+
+.body-image {
+  width: 100%;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  border: 2px dashed darkorange;
+  overflow: hidden;
+}
+
+.body-image img {
+  max-width: 100%;
+}
+
+.author-contact {
+  width: 100%;
+}
+
+.block-panel {
+  border-left: 1px dashed black;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  right: -100px;
+  transition: 0.5s;
+}
+
+.block-window:hover .block-panel {
+  right: 0;
+}
+
+.block-panel div {
+  margin: 10px 5px;
+}
+
+.block-panel a {
+  color: black;
+  font-size: 0.6em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.block-panel a:hover {
+  background: black;
+  color: white;
+}
